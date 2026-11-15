@@ -110,12 +110,13 @@ You can explore the interactive dashboard here:
 ---
 
 ## 🚀 How to Reproduce
-1. Clone this repository.  
-2. Set up **Azure Data Lake Gen2** and upload sample data (CSV, JSON).  
-3. Create a **Databricks cluster** and run the provided PySpark notebooks.  
-4. Verify Bronze → Silver → Gold tables in Delta format.  
-5. Export Gold data as CSV for Tableau Public.  
-6. Connect Tableau to the exported datasets and publish dashboards.
+1. Clone this repository.
+2. Set up Azure Data Lake Gen2 and upload the sample data from `data/`.
+3. Create a Databricks cluster and run the PySpark notebooks in `notebooks/`. The same code as .py files is in `src/`.
+4. Add your own storage key as a Databricks secret. Never write keys in the code.
+5. Verify the Bronze, Silver and Gold tables in Delta format.
+6. Export the Gold data as CSV for Tableau Public. Examples are in `tableau_exports/`.
+7. Connect Tableau to the exported files and publish the dashboard.
 
 ---
 
